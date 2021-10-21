@@ -1,0 +1,128 @@
+@import "../scss/mixin.scss";
+@import "../scss/variable.scss";
+
+/*========= Gnereal CSS  Start  ==========*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: 'Work Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+input,button:focus{
+  outline: none;
+}
+
+/*========= Common CSS  Start  ==========*/
+
+
+
+h1{
+  font-weight: 600;
+  font-size: 50px;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 80px;
+}
+
+h3 {
+  font-weight: 200;
+  font-size: 55px;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 25px;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  &:before{
+    content:"";
+    border-bottom: 3px solid $orange;
+    width: 100px;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+  }
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+}
+.white_color{
+  color: $white;
+}
+.black_btn{
+  @include black_btn(138px,initial);
+ 
+}
+.logo{
+  color: $orange;
+  font-size: 30px;
+  font-weight: 600;
+}
+.green_color{
+   color: $orange;
+}
+
+.outline_btn{
+  @include outline_btn(143px,uppercase);
+}
+
+.view_all_btn{
+  @include view_all_btn(#C4C4C4,136px);
+}
+
+.wrap_heading{
+   @include flex(space-between, center);
+   margin-bottom: 60px;
+   padding: 0 9px;
+   &.padd_0{
+    padding: 0;
+   }
+}
+

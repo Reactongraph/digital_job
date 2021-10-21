@@ -1,0 +1,103 @@
+@mixin black_btn($min_width,$text_transform){
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: $text_transform;
+    font-size: 18px;
+    background: $black;
+    background: linear-gradient(to right, $black 50%, $orange 50%);
+    background-size: 200% 100%;
+    background-position:left bottom;
+    color: $white;
+    font-weight: normal;
+    border-radius: 2px;
+    min-width: $min_width;
+    padding: 12px 10px;
+    border: none;
+    transition: all .3s ease;
+    outline: none;
+    &:hover{
+      background-position:right bottom;
+      cursor: pointer;
+      color: $white;
+    }
+  }
+  
+  @mixin view_all_btn($border_color,$min_width) {
+     background: transparent;
+     text-transform: uppercase;
+     display: flex;
+     align-items: center;
+     vertical-align: middle;
+     text-align: center;
+     font-weight: 500;
+     padding: 12px 30px;
+     font-size: 14px;
+     min-width: $min_width;
+     border:1px solid $border_color;
+     color: $dark_grey;
+     transition: all .3s ease;
+     svg{
+      margin-left: 12px;
+      }
+      
+      &:hover{
+        background: $grey_outline;
+        transition: all .3s ease;
+      }
+  }
+  
+  @mixin outline_btn($min_width,$text_transform){
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: $text_transform;
+    font-weight: normal;
+    font-size: 16px;
+    background: transparent;
+    font-weight: normal;
+    border-radius: 2px;
+    min-width: $min_width;
+    padding: 12px 10px;
+    border: 1px solid $light_black;
+    color: $dark_grey;
+    transition: all .3s ease;
+    outline: none;
+    position: relative;
+    span{
+       font-size: 16px;
+       margin-bottom: 0;
+    }
+   &:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all .35s; 
+  }
+    &:hover{
+      background-position:right bottom;
+      cursor: pointer;
+      color: $white;
+       border-color: transparent;
+       span{
+        position: relative;
+        z-index: 2;
+        color: $white; 
+       }
+      &:after{
+        width:100%;
+      }
+    }
+  }
+  
+  
+  @mixin flex($justify_content,$align_items){
+     display: flex;
+     justify-content: $justify_content;
+     align-items: $align_items; 
+  }
+  

@@ -1,0 +1,53 @@
+{ 
+    "footerColoumn":[
+        {
+            "heading":"Categories"
+        },
+        {
+            "heading":"Categories"
+        },
+        {
+            "heading":"Categories"
+        }
+    ],
+
+    "listing":[
+        {
+            "list":"Home"
+        },
+        {
+            "list":"Forums"
+        },
+        {
+            "list":"Help Center"
+        },
+        {
+            "list":"Become an Affiliate"
+        },
+        {
+            "list":"Community Meetups"
+        }
+        
+    ],
+
+    "helplisting":[
+        {
+            "list":"Support Forum"
+        },
+        {
+            "list":"Terms & Conditions"
+        },
+        {
+            "list":"Support Policy"
+        },
+        {
+            "list":"Refund Policy"
+        },
+        {
+            "list":"FAQs"
+        }
+        
+    ]
+
+    
+}

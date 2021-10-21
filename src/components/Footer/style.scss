@@ -1,0 +1,82 @@
+@import "../../scss/mixin.scss";
+@import "../../scss/variable.scss";
+
+
+
+footer{
+    padding: 56px 0 50px 0;
+    background: $footer_bg;
+}
+  
+.social_list{
+    margin-top: 38px;
+    li{
+      display: inline-block;
+      margin-bottom: 0;
+      margin-right: 13px;
+      a{
+        color: $white;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        &.fb{
+          background: #28b2f4;
+        }
+        &.insta{
+          background: #f428b5;
+        }
+        &.youtube{
+          background: red;
+        }
+        &.env{
+           background: $white;
+           color: #000;
+        }
+        &:hover{
+          background: $orange;
+          color: $white;
+        }
+      }
+      
+    }
+
+  }
+
+  .contact_list{
+    margin-top: 10px;
+    li{
+      margin-top: 10px;
+      color: $white;
+      i{
+        color: $orange;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .listing{
+    margin-top: 30px;
+    li{
+      margin-bottom: 9px;
+      a{
+        color: $white;
+        &:hover{
+          color: $orange;
+        }
+      }
+    }
+  }
+  .footer_title{
+    position: relative;
+    &:before{
+       content: "";
+       border-bottom: 3px solid $orange;
+       position: absolute;
+       left: 0;
+       bottom: -15px;
+       width: 51px;
+    }
+  }

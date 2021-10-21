@@ -1,0 +1,57 @@
+@import "../../scss/mixin.scss";
+@import "../../scss/variable.scss";
+
+
+
+header {
+    padding: 21.5px 0;
+}
+.wrap_header_col {
+  @include flex(space-between, center);
+}
+.lnk_btn{
+  color: $orange;
+  margin: 0 3px;
+  font-weight: 600;
+}
+.menus {
+  li {
+      display: inline-block;
+    a {
+      font-weight: 600;
+      font-size: 16px;
+      margin-right: 36px;
+      color: $black_shade;
+      transition: all 0.25s ease; 
+      &:hover{
+        color:$orange;
+        transition: all 0.25s ease; 
+      }
+      &:focus{
+        color:$orange;
+        transition: all 0.25s ease; 
+      }
+      &.active{
+        color:$orange;
+        transition: all 0.25s ease; 
+      }
+    }
+  }
+}
+.search_row {
+  position: relative;
+  width: 416px;
+  input[type=search] {
+    border: 1px solid $input_border;
+    width: 100%;
+    padding: 6px 9px 6px 30px;
+    border-radius: 2px;
+}
+button{
+  background: transparent;
+  border:none;
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+}

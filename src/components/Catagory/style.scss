@@ -1,0 +1,150 @@
+@import "../../scss/mixin.scss";
+@import "../../scss/variable.scss";
+
+
+.catagories{
+    background: $light_grey;
+    padding: 34px 0;
+    .lg_card{
+      background: $white;
+      padding: 40px 40px 100px;
+      border-radius: 2px;
+      .wrap_heading{
+         padding: 0 9px;
+      }
+    }
+  }
+  
+  
+  .catagories_slide{
+      border-radius: 7px;
+      border: 1px solid #ddd;
+      position: relative;
+      padding: 0;
+      img{
+        width: 100%;
+      }
+   
+      &:focus{
+        outline: none;
+      }
+      .black_btn{
+        @include black_btn(177px,uppercase);
+        position: absolute;
+        bottom: -9px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      &:hover{
+        box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
+      }
+    }
+    .bottom_crd{
+      display: flex;
+      padding: 10px;
+      align-items: center;
+      img{
+        width: 33px;
+        margin-right: 10px;
+      }
+      .badge{
+        background:$orange;
+        position: absolute;
+        right: 16px;
+        font-size: 16px;
+        i{
+          margin-right: 4px;
+        }
+      }
+      p{
+        color: $light_black;
+      }
+    }
+
+    .slick-arrow{
+      width: 39px;
+      height: 35px;
+      border-radius: 5px;
+      top: initial;
+      bottom: -82px;
+      left: initial;
+    }
+    .slick-prev {
+      background: #000;
+      right: 52px;
+      &:before{
+        content: ""; 
+        opacity: 1;
+        background:url("../../assests/images/arrow_lft.svg") no-repeat;
+        width: 16px;
+        height: 20px;
+        position: absolute;
+        top: 9px;
+        left: 13px;
+      }
+      &:hover,&:focus{
+        background: $orange;
+        color: $white;
+      }
+    }
+    .slick-next {
+      background: $arrow_btn;
+      right: 9px;
+      &:before{
+        content: ""; 
+        opacity: 1;
+        background:url("../../assests/images/arrow_rgt.svg") no-repeat;
+        width: 16px;
+        height: 20px;
+        position: absolute;
+        top: 9px;
+        left: 17px;
+      }
+      &:hover,&:focus{
+        background: $orange;
+        color: $white;
+      }
+
+    }
+    .slick-dots {
+      bottom: -42px;
+      li{
+        width: auto;
+        height: auto;
+        &.slick-active{
+          button{
+            background: $heading_border;
+          }
+        }
+       button {
+         background: #000;
+         width: 35px;
+         height: 8px;
+         border-radius: 12px;
+         padding: 0;
+        &:before{
+          display: none;
+        }
+       }     
+      }
+    }
+
+.wrap_card_heading {
+  padding: 12px 14px;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  color: $light_black;
+  h5{
+    margin-bottom: 4px;
+  }
+  span{
+      font-weight: 600;
+      font-size: 20px;
+      position: absolute;
+      right: 20px;
+      top: 10px;
+  }
+}
+.slick-slide{
+  padding: 30px 18px;
+}

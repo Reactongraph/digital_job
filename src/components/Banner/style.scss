@@ -1,0 +1,49 @@
+@import "../../scss/mixin.scss";
+@import "../../scss/variable.scss";
+
+
+  .banner{
+    min-height: 560px;
+    width: 100%;
+    background: fixed url("../../assests/images/main_banner.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    .banner_contnt{
+      width: 61%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+
+      .black_btn{
+        margin-top: 100px;
+      }
+      h4{
+        margin-top: 34px;
+        color: #fff;
+        line-height: 47px;
+      }
+      h1{
+        color: #fff;
+        animation: typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+        overflow: hidden; 
+        border-right: 2px solid $yellow_color; 
+        white-space: nowrap;     
+        display: inline-block;
+ 
+
+      }
+    }
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  

@@ -1,0 +1,20 @@
+@import "../../scss/mixin.scss";
+@import "../../scss/variable.scss";
+
+.top_header {
+    @include flex(center, center);
+     padding: 16px 0;
+     border-bottom: 1px solid $border_color;
+     span{
+        font-size: 14px;
+        color: $dark_grey;
+        font-weight: 400;
+        margin: 0 14px;
+        i{
+         color: $orange;
+         margin-right: 8px;
+        }
+        @include flex(center, center);
+     }
+  }
+  
