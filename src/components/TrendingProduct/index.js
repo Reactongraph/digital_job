@@ -2,7 +2,7 @@ import React from "react";
 import "../TrendingProduct/style.scss";
 import "../Catagory/style.scss";
 import {product1,product2,product3,product4,avtar} from "../../image.js";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const TrendingProduct = ()=>{
