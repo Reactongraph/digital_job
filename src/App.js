@@ -6,7 +6,7 @@ import "./components/Header/style.scss";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
 import {searchIcn } from "./image";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 
 function App() {
@@ -64,17 +64,10 @@ function App() {
             </div>
           </div>
         </header>
-
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          
-          <Route path="/product">
-            <Product />
-          </Route>
-
-        </Switch>
+        <Routes>
+        <Route exact path="/" element={<Home />} />
+          <Route path="/product" element={<Product />} />
+        </Routes>
       </Router>
       <Footer />
     </div>
