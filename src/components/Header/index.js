@@ -12,33 +12,6 @@ const MainHeader = () => {
     <header>
       <div className="container">
         <div className="wrap_header">
-          <div className="wrap_header_col mgbotm">
-            <Link className="logo" to="/">
-              Logo
-            </Link>
-            <Router>
-              <ul className="menus">
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/about">About</Link>
-                </li>
-                <li>
-                  <Link to="/product">Product</Link>
-                </li>
-                <li>
-                  <Link to="/contact">Contact</Link>
-                </li>
-              </ul>
-
-              <Routes>
-                <Route exact path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/product" element={<Product />} />
-                <Route path="/contact" element={<Contact />} />
-              </Routes>
-            </Router>
             <button type="button" className="toggle_btn">
               <i className="fa fa-bars" aria-hidden="true"></i>
             </button>
@@ -62,7 +35,6 @@ const MainHeader = () => {
             </div>
           </div>
         </div>
-      </div>
     </header>
   );
 };
